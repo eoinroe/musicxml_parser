@@ -29,7 +29,7 @@ class Direction(object):
   def _parse(self):
     """Parse the MusicXML <direction> element."""
     direction = self.xml_direction
-    child_list = direction.find('direction-type').getchildren()
+    direction = self.xml_direction
     if len(child_list) == 0:
       return
     staff = direction.find('staff')
